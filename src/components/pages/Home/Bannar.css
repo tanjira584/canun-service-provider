@@ -1,0 +1,27 @@
+.slide-bannar {
+    height: 100vh;
+    background-color: #29395b;
+    margin-top: -92px;
+}
+.slide-title h1 {
+    font-size: 60px;
+    margin-bottom: 16px;
+    line-height: 1.4em;
+    color: #fff;
+}
+.slide-text h4 {
+    color: #b2d7e2;
+    line-height: 1.4em;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.slide-btn button {
+    text-transform: capitalize;
+    padding: 12px 50px;
+    background-color: #e3b576;
+    border: 4px solid #1e3055;
+    font-weight: 500;
+}
+.slide-btn button:hover {
+    background-color: #dca354;
+}
