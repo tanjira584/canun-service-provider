@@ -1,7 +1,15 @@
+import { signOut } from "firebase/auth";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Link } from "react-router-dom";
+import auth from "../../../firebase.init";
 import logo from "../../../images/logo2.svg";
 
 const Header = () => {
+    const [user, loading, error] = useAuthState(auth);
+    const handleLogout = () => {
+        signOut(auth);
+    };
     return (
         <div className="py-2">
             <nav className="navbar navbar-expand-lg navbar-dark">
@@ -21,18 +29,36 @@ const Header = () => {
                         className="collapse navbar-collapse"
                         id="navbarTogglerDemo01"
                     >
-                        <a className="navbar-brand" href=" ">
+                        <a className="navbar-brand" href="/">
                             <img height="50px" src={logo} alt="" />
                         </a>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a
-                                    className="nav-link active"
-                                    aria-current="page"
-                                    href=" "
-                                >
+                                <Link to="/" className="nav-link active">
                                     Home
-                                </a>
+                                </Link>
+                            </li>
+                            {user ? (
+                                <li className="nav-item">
+                                    <button
+                                        onClick={handleLogout}
+                                        className="nav-link bg-transparent border-0"
+                                    >
+                                        Logout
+                                    </button>
+                                </li>
+                            ) : (
+                                <li className="nav-item">
+                                    <Link to="/login" className="nav-link">
+                                        Login
+                                    </Link>
+                                </li>
+                            )}
+
+                            <li className="nav-item">
+                                <Link to="/signup" className="nav-link">
+                                    Signup
+                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -1,20 +1,15 @@
 import React from "react";
-
 import Footer from "../../share/Footer/Footer";
 import Header from "../../share/Header/Header";
-import Bannar from "./Bannar";
-import Services from "./Services";
 
-const Home = () => {
+const Checkout = () => {
     return (
-        <div>
+        <div className="bg-primary">
             <Header></Header>
-            <Bannar></Bannar>
-            <Services></Services>
-
+            <h1 className="display-2 text-center">This is Checkout page</h1>
             <Footer></Footer>
         </div>
     );
 };
 
-export default Home;
+export default Checkout;

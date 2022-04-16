@@ -1,0 +1,13 @@
+.login-area {
+    background-color: #163967;
+}
+.login-btn button {
+    width: 100%;
+    padding: 8px 12px;
+}
+.login-providers button {
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 8px 12px;
+    text-transform: capitalize;
+}

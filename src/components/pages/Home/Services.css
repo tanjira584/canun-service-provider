@@ -8,7 +8,9 @@
 .section-title h2 {
     font-size: 40px;
 }
-
+.section-title h2 span {
+    color: #e3b576;
+}
 .service-title-bar .service-title {
     height: 122px;
     background: #f2eeed;
@@ -67,9 +69,17 @@
     line-height: 1.6em;
 }
 .service-data a {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color: #e3b576;
     font-weight: 500;
-    padding: 10px 0;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid #e3b576;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.service-data a:hover {
+    color: #e3b576;
 }
