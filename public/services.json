@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Personal Injury",
+        "price": 300,
+        "img": "https://i.ibb.co/5Bsn6kh/service1.jpg",
+        "title": "Domestic Violence in London How a Lawyer Can Help",
+        "desc": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter."
+    },
+    {
+        "id": 2,
+        "name": "Family Law",
+        "price": 350,
+        "img": "https://i.ibb.co/TkrM9M4/service2.jpg",
+        "title": "Domestic Violence in London How a Lawyer Can Help",
+        "desc": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter."
+    },
+    {
+        "id": 3,
+        "name": "Criminal Law",
+        "price": 200,
+        "img": "https://i.ibb.co/t2yvzhT/service3.jpg",
+        "title": "Domestic Violence in London How a Lawyer Can Help",
+        "desc": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter."
+    },
+    {
+        "id": 4,
+        "name": "Education Law",
+        "price": 250,
+        "img": "https://i.ibb.co/hD89qRS/service4.jpg",
+        "title": "Domestic Violence in London How a Lawyer Can Help",
+        "desc": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter."
+    },
+    {
+        "id": 5,
+        "name": "Real State Law",
+        "price": 350,
+        "img": "https://i.ibb.co/pfrdQrC/service5.jpg",
+        "title": "Domestic Violence in London How a Lawyer Can Help",
+        "desc": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter."
+    },
+    {
+        "id": 6,
+        "name": "Business Law",
+        "price": 300,
+        "img": "https://i.ibb.co/7RjbBtQ/service6.jpg",
+        "title": "Domestic Violence in London How a Lawyer Can Help",
+        "desc": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter."
+    }
+]
