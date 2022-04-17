@@ -16,11 +16,10 @@ const Login = () => {
     const location = useLocation();
     const from = location?.state?.from?.pathname;
 
-    const [signInWithEmailAndPassword, user, loading, error] =
+    const [signInWithEmailAndPassword, user] =
         useSignInWithEmailAndPassword(auth);
 
-    const [signInWithGoogle, guser, gloading, gerror] =
-        useSignInWithGoogle(auth);
+    const [signInWithGoogle, guser] = useSignInWithGoogle(auth);
 
     const handleEmail = (e) => {
         setEmail(e.target.value);

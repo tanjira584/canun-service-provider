@@ -6,7 +6,7 @@ import auth from "../../../firebase.init";
 import logo from "../../../images/logo2.svg";
 
 const Header = () => {
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const handleLogout = () => {
         signOut(auth);
     };
@@ -36,6 +36,16 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link to="/" className="nav-link active">
                                     Home
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/about" className="nav-link ">
+                                    About
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/blogs" className="nav-link">
+                                    Blogs
                                 </Link>
                             </li>
                             {user ? (
