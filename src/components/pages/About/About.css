@@ -1,0 +1,16 @@
+.about-me-content .title {
+    border-left: 10px solid #e3b576;
+    padding: 0 20px;
+}
+.about-me-content .content p {
+    color: #687693;
+    line-height: 1.6em;
+    margin-bottom: 24px;
+}
+.about-me-content .signature span {
+    color: #687693;
+    line-height: 1.6em;
+}
+.about-me-content .signature h4 {
+    color: #5c6c8c;
+}

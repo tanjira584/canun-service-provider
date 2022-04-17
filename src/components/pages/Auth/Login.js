@@ -6,6 +6,7 @@ import "./Login.css";
 import {
     useSignInWithEmailAndPassword,
     useSignInWithGoogle,
+    useSendPasswordResetEmail,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 
@@ -14,10 +15,12 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location?.state?.from?.pathname;
+    const from = location?.state?.from?.pathname || "/";
 
     const [signInWithEmailAndPassword, user] =
         useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail, sending, error] =
+        useSendPasswordResetEmail(auth);
 
     const [signInWithGoogle, guser] = useSignInWithGoogle(auth);
 
@@ -27,6 +30,9 @@ const Login = () => {
     const handlePassword = (e) => {
         setPassword(e.target.value);
     };
+    if (sending) {
+        return <p>Loading.....</p>;
+    }
     if (user || guser) {
         navigate(from, { replace: true });
     }
@@ -34,7 +40,9 @@ const Login = () => {
         e.preventDefault();
         signInWithEmailAndPassword(email, password);
     };
-    const handleForgotPassword = () => {};
+    const handleForgotPassword = () => {
+        sendPasswordResetEmail(email);
+    };
     return (
         <div className="login-area">
             <Header></Header>
@@ -74,7 +82,6 @@ const Login = () => {
                                     className="form-control"
                                     id="password"
                                     placeholder="Enter password"
-                                    required
                                 />
                             </div>
                             <p className="mb-5">
@@ -86,7 +93,7 @@ const Login = () => {
                                 </button>
                             </p>
                             <div className="login-btn">
-                                <button>Login</button>
+                                <button type="submit">Login</button>
                             </div>
                             <p className="mt-3 text-center text-light">
                                 Don't you have an account?{" "}

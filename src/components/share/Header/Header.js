@@ -11,7 +11,7 @@ const Header = () => {
         signOut(auth);
     };
     return (
-        <div className="py-2">
+        <div style={{ backgroundColor: "#29395B" }} className="py-2">
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container-fluid container-md">
                     <button

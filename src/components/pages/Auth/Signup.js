@@ -6,14 +6,19 @@ import "./Signup.css";
 import {
     useCreateUserWithEmailAndPassword,
     useSignInWithGoogle,
+    useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 
 const Signup = () => {
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [createUserWithEmailAndPassword, user, loading, error] =
-        useCreateUserWithEmailAndPassword(auth);
+        useCreateUserWithEmailAndPassword(auth, {
+            sendEmailVerification: true,
+        });
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const [signInWithGoogle, guser, gloading, gerror] =
         useSignInWithGoogle(auth);
@@ -22,13 +27,25 @@ const Signup = () => {
         setEmail(e.target.value);
         e.target.value = "";
     };
+    const handleName = (e) => {
+        setName(e.target.value);
+        e.target.value = "";
+    };
     const handlePassword = (e) => {
         setPassword(e.target.value);
         e.target.value = "";
     };
-    const handleSubmit = (e) => {
+    if (loading || updating || gloading) {
+        return <p>Loading.....</p>;
+    }
+    if (user || guser) {
+        console.log("user", user);
+    }
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        createUserWithEmailAndPassword(email, password);
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
     };
     const handleForgotPassword = () => {};
     const handleGoogleSignIn = () => {
@@ -52,11 +69,11 @@ const Signup = () => {
                                     Enter name
                                 </label>
                                 <input
-                                    onBlur={handleEmail}
+                                    onBlur={handleName}
                                     type="text"
                                     className="form-control"
                                     id="name"
-                                    placeholder="Enter email"
+                                    placeholder="Enter name"
                                 />
                             </div>
                             <div className="mb-3">

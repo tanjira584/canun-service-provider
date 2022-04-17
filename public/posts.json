@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "What difference between authorization and authentication?",
+        "img": "https://i.ibb.co/sHzptTx/blog3.png",
+        "desc": "Generally, visitation by the birth parents is difficult unless the process was an open adoption as opposed to a closed one. Visitation may still depend on the adoptive parents. These situations require communication and a relationship between all parties before the child ever enters the picture. After a divorce, children may turn into a battlefield between former spouses. The mother of the children, under any pretext, does not give the children to the father",
+        "author": "Tomas Alva",
+        "comment": 5
+    },
+    {
+        "id": 2,
+        "title": " Why are you using firebase? What other options do you have to implement authentication?",
+        "img": "https://i.ibb.co/WvN6qFN/blog4.webp",
+        "desc": "Generally, visitation by the birth parents is difficult unless the process was an open adoption as opposed to a closed one. Visitation may still depend on the adoptive parents. These situations require communication and a relationship between all parties before the child ever enters the picture. After a divorce, children may turn into a battlefield between former spouses. The mother of the children, under any pretext, does not give the children to the father",
+        "author": "Jhon Doe",
+        "comment": 3
+    },
+
+    {
+        "id": 3,
+        "title": "What other services does firebase provide other than authentication?",
+        "img": "https://i.ibb.co/WK5Tgyc/blog2.webp",
+        "desc": "Generally, visitation by the birth parents is difficult unless the process was an open adoption as opposed to a closed one. Visitation may still depend on the adoptive parents. These situations require communication and a relationship between all parties before the child ever enters the picture. After a divorce, children may turn into a battlefield between former spouses. The mother of the children, under any pretext, does not give the children to the father",
+        "author": "jenifer willy",
+        "comment": 4
+    }
+]
