@@ -31,7 +31,7 @@ const About = () => {
                                     There are many variations of passages of
                                     Lorem Ipsum available, but the majority have
                                     suffered alteration in some form, by
-                                    injected humour, or randomised words which
+                                    injected humour, or randaomised words which
                                     don't look even slightly believable and
                                     going through the cites of the word in
                                     classical literature, discovered the
