@@ -1,0 +1,70 @@
+.consulting-area {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+}
+.consulting-form {
+    border: 30px solid #9b8179;
+}
+.consulting-form form {
+    padding: 50px;
+}
+.consulting-form form h2 {
+    border-bottom: 1px solid #e3b576;
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+}
+.consulting-form form input,
+.consulting-form form select,
+.consulting-form form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 14px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #9b817926;
+    outline: none;
+}
+.consulting-form form button {
+    background: #e3b576;
+    color: #070143;
+    display: inline-block;
+    font-weight: 600;
+    padding: 15px 45px;
+    border: 0;
+    border-radius: 6px;
+    text-transform: capitalize;
+    z-index: 1;
+    position: relative;
+    font-size: 16px;
+    font-size: 1.06667rem;
+    border-radius: 40px;
+    transition: 0.5s all;
+}
+.consulting-form form button:hover {
+    background-color: #dca354;
+}
+
+/*------*/
+.consulting-content .title {
+    padding: 20px 20px;
+}
+.consulting-content .title h2 {
+    line-height: 1.4em;
+}
+
+.consulting-content .content p {
+    color: #687693;
+    line-height: 1.6em;
+    margin-bottom: 24px;
+}
+.consulting-content .signature span {
+    color: #687693;
+    line-height: 1.6em;
+}
+.consulting-content .signature h4 {
+    color: #5c6c8c;
+}
+.consulting-content .title {
+    background-color: #f7f7f7;
+    margin-left: -80px;
+}

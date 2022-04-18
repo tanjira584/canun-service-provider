@@ -19,8 +19,7 @@ const Login = () => {
 
     const [signInWithEmailAndPassword, user] =
         useSignInWithEmailAndPassword(auth);
-    const [sendPasswordResetEmail, sending, error] =
-        useSendPasswordResetEmail(auth);
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
     const [signInWithGoogle, guser] = useSignInWithGoogle(auth);
 
