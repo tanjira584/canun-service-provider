@@ -13,7 +13,7 @@
 }
 .service-title-bar .service-title {
     height: 122px;
-    background: #f2eeed;
+    background: transparent;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -21,6 +21,24 @@
     cursor: pointer;
     position: relative;
     z-index: 9;
+}
+.service-title-bar:nth-child(1) {
+    background: #faf8f8;
+}
+.service-title-bar:nth-child(3) {
+    background: #faf8f8;
+}
+.service-title-bar:nth-child(5) {
+    background: #faf8f8;
+}
+.service-title-bar:nth-child(2) {
+    background: #f2eeed;
+}
+.service-title-bar:nth-child(4) {
+    background: #f2eeed;
+}
+.service-title-bar:nth-child(6) {
+    background: #f2eeed;
 }
 .service-title-bar .service-title p {
     margin-bottom: 0;

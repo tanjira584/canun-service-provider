@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { createRef, useRef, useState } from "react";
 import "./Services.css";
 
 import useServices from "../../../hooks/useServices";
 import { Link } from "react-router-dom";
 
+const dfltService = {
+    id: 1,
+    name: "Personal Injury",
+    price: 300,
+    img: "https://i.ibb.co/5Bsn6kh/service1.jpg",
+    title: "Domestic Violence in London How a Lawyer Can Help",
+    desc: "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter.",
+};
 const Services = () => {
-    const [services, ser] = useServices();
-
-    const [service, setService] = useState(ser);
+    const [services] = useServices();
+    const [service, setService] = useState(dfltService);
 
     const handleService = (id) => {
         const seleltedService = services.find(
@@ -15,7 +22,7 @@ const Services = () => {
         );
         setService(seleltedService);
     };
-
+    console.log(service.id);
     return (
         <div className="service-area">
             <div className="container-md p-0 p-md-2">
@@ -33,9 +40,9 @@ const Services = () => {
                         <div className="col-md-5">
                             <div className="section-info-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
+                                    Everyone wants to say they hate lawyers, and
+                                    yet I've never met a parent who didn't want
+                                    their kid to be a lawyer.
                                 </p>
                             </div>
                         </div>
@@ -44,17 +51,80 @@ const Services = () => {
                 <div>
                     <div className="row g-0">
                         <div className="col-md-4">
-                            {services.map((service) => (
+                            <div>
                                 <div
                                     className="service-title-bar"
-                                    key={service.id}
-                                    onClick={() => handleService(service.id)}
+                                    onClick={() => handleService(1)}
                                 >
-                                    <div className="service-title ">
-                                        <p>{service.name}</p>
+                                    <div
+                                        className={`service-title ${
+                                            service.id === 1 && "active-bar"
+                                        }`}
+                                    >
+                                        <p>Personal Injury</p>
                                     </div>
                                 </div>
-                            ))}
+                                <div
+                                    className="service-title-bar"
+                                    onClick={() => handleService(2)}
+                                >
+                                    <div
+                                        className={`service-title ${
+                                            service.id === 2 && "active-bar"
+                                        }`}
+                                    >
+                                        <p>Family Law</p>
+                                    </div>
+                                </div>
+                                <div
+                                    className="service-title-bar"
+                                    onClick={() => handleService(3)}
+                                >
+                                    <div
+                                        className={`service-title ${
+                                            service.id === 3 && "active-bar"
+                                        }`}
+                                    >
+                                        <p>Criminal Law</p>
+                                    </div>
+                                </div>
+                                <div
+                                    className="service-title-bar"
+                                    onClick={() => handleService(4)}
+                                >
+                                    <div
+                                        className={`service-title ${
+                                            service.id === 4 && "active-bar"
+                                        }`}
+                                    >
+                                        <p>Education Law</p>
+                                    </div>
+                                </div>
+                                <div
+                                    className="service-title-bar"
+                                    onClick={() => handleService(5)}
+                                >
+                                    <div
+                                        className={`service-title ${
+                                            service.id === 5 && "active-bar"
+                                        }`}
+                                    >
+                                        <p>Real State Law</p>
+                                    </div>
+                                </div>
+                                <div
+                                    className="service-title-bar"
+                                    onClick={() => handleService(6)}
+                                >
+                                    <div
+                                        className={`service-title ${
+                                            service.id === 6 && "active-bar"
+                                        }`}
+                                    >
+                                        <p>Business Law</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-8">
                             <div className="service-content position-relative">

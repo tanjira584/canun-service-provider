@@ -14,6 +14,9 @@ const Header = () => {
         <div style={{ backgroundColor: "#29395B" }} className="py-2">
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container-fluid container-md">
+                    <a className="navbar-brand" href="/">
+                        <img height="50px" src={logo} alt="" />
+                    </a>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -29,9 +32,6 @@ const Header = () => {
                         className="collapse navbar-collapse"
                         id="navbarTogglerDemo01"
                     >
-                        <a className="navbar-brand" href="/">
-                            <img height="50px" src={logo} alt="" />
-                        </a>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link to="/" className="nav-link active">

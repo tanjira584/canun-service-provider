@@ -52,26 +52,25 @@ const Consult = () => {
                             <div className="consulting-content px-md-4">
                                 <div className="title mb-2">
                                     <h2 className="">
-                                        We Are Here To Fight Against Any
-                                        Violence With Experience
+                                        I'm Here To Fight Against Any Violence
+                                        With Experience
                                     </h2>
                                 </div>
                                 <div className="content px-md-4">
                                     <p>
-                                        There are many variations of passages of
-                                        Lorem Ipsum available, but the majority
-                                        have suffered alteration in some form,
-                                        by injected humour, or randaomised words
-                                        which don't look even slightly
-                                        believable and going through the cites
-                                        of the word in classical literature,
-                                        discovered the undoubtable source. Lorem
-                                        Ipsum comes from sections.
+                                        A lawyer is a person who is qualified to
+                                        advise people about the law and
+                                        represent them in court. Prosecution and
+                                        defense lawyers are expected to deliver
+                                        closing arguments next week. Synonyms:
+                                        legal adviser, attorney, solicitor,
+                                        counsel More Synonyms of lawyer. COBUILD
+                                        Advanced English Dictionary.
                                     </p>
                                     <div className="signature">
                                         <h4>Tanjir Ahmed</h4>
                                         <span className="d-block mb-4">
-                                            Full Stack Web developer
+                                            Lawyer, Social Server.
                                         </span>
                                         <img src={sigin} alt="" />
                                     </div>
