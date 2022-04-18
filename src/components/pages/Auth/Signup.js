@@ -14,15 +14,16 @@ const Signup = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [createUserWithEmailAndPassword, user, loading, error] =
+
+    /*------Use React-firebase hooks-----*/
+    const [createUserWithEmailAndPassword, user, loading] =
         useCreateUserWithEmailAndPassword(auth, {
             sendEmailVerification: true,
         });
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [updateProfile, updating] = useUpdateProfile(auth);
+    const [signInWithGoogle, guser, gloading] = useSignInWithGoogle(auth);
 
-    const [signInWithGoogle, guser, gloading, gerror] =
-        useSignInWithGoogle(auth);
-
+    /*-----Handle Input from------*/
     const handleEmail = (e) => {
         setEmail(e.target.value);
         e.target.value = "";
@@ -35,6 +36,7 @@ const Signup = () => {
         setPassword(e.target.value);
         e.target.value = "";
     };
+
     if (loading || updating || gloading) {
         return <p>Loading.....</p>;
     }
@@ -42,12 +44,14 @@ const Signup = () => {
         console.log("user", user);
     }
 
+    /*------Handle Signup form Submit-----*/
     const handleSubmit = async (e) => {
         e.preventDefault();
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
     };
-    const handleForgotPassword = () => {};
+
+    /*----Handle Google Signin-----*/
     const handleGoogleSignIn = () => {
         signInWithGoogle();
     };
@@ -60,6 +64,7 @@ const Signup = () => {
                         Didn't Have An Account ? Please Register.
                     </h2>
                     <div className="login-form w-50 mx-auto">
+                        {/*------------Sign up Form-----------*/}
                         <form onSubmit={handleSubmit} className="border p-5">
                             <div className="mb-3">
                                 <label
@@ -92,7 +97,7 @@ const Signup = () => {
                                     required
                                 />
                             </div>
-                            <div className="mb-2">
+                            <div className="mb-3">
                                 <label
                                     htmlFor="password"
                                     className="form-label text-light"
@@ -108,14 +113,6 @@ const Signup = () => {
                                     required
                                 />
                             </div>
-                            <p className="mb-5 text-light">
-                                <button
-                                    onClick={handleForgotPassword}
-                                    className="password-reset-btn"
-                                >
-                                    Forgot Password?
-                                </button>
-                            </p>
                             <div className="signup-btn">
                                 <button onClick={handleSubmit}>Register</button>
                             </div>
@@ -124,15 +121,14 @@ const Signup = () => {
                                 <Link to="/login">Login here</Link>
                             </p>
                         </form>
+                        {/*------Form Devider------*/}
                         <div className="or-div d-flex align-items-center mt-3">
                             <div className="w-50 border"></div>
                             <div className="mx-2 text-light">or</div>
                             <div className="w-50 border"></div>
                         </div>
+                        {/*---------Google Signin ------------*/}
                         <div className="login-providers mt-3 px-5">
-                            <div className="facebook">
-                                <button>Continue with facebook</button>
-                            </div>
                             <div className="google">
                                 <button onClick={handleGoogleSignIn}>
                                     Continue with Google

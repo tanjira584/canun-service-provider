@@ -44,7 +44,7 @@
     background-color: #dca354;
 }
 
-/*------*/
+/*---Consulting Content---*/
 .consulting-content .title {
     padding: 20px 20px;
 }
@@ -67,4 +67,30 @@
 .consulting-content .title {
     background-color: #f7f7f7;
     margin-left: -80px;
+}
+
+@media screen and (max-width: 768px) {
+    .consulting-area {
+        padding: 70px 0;
+    }
+    .consulting-form {
+        border: 5px solid #9b817938;
+    }
+    .consulting-form form {
+        padding: 16px;
+    }
+    .consulting-form form h2 {
+        text-align: center;
+    }
+    .consulting-form form button {
+        display: block;
+        margin: auto;
+    }
+    .consulting-content {
+        margin-top: 50px;
+    }
+    .consulting-content .title {
+        margin-left: 0px;
+        padding: 0;
+    }
 }

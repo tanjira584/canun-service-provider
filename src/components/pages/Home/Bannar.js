@@ -9,10 +9,8 @@ const Bannar = () => {
                     <div className="col-md-7">
                         <div className="slide-content">
                             <div className="slide-title">
-                                <h1>
-                                    Let's Fight For Your Justice As Like A
-                                    Friend.
-                                </h1>
+                                <h1>Canun Lawyer APP.</h1>
+                                <h1>Let's Fight For Your Justice.</h1>
                             </div>
                             <div className="slide-text">
                                 <h4>

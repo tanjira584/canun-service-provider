@@ -9,6 +9,7 @@ const Consult = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
+                            {/*---------Appoinment Form------*/}
                             <div className="consulting-form">
                                 <form>
                                     <h2>Free Consulting</h2>
@@ -47,14 +48,15 @@ const Consult = () => {
                             </div>
                         </div>
                         <div className="col-md-6 d-flex flex-column justify-content-center">
-                            <div className="consulting-content px-4">
+                            {/*---------Appoinment Content------*/}
+                            <div className="consulting-content px-md-4">
                                 <div className="title mb-2">
                                     <h2 className="">
                                         We Are Here To Fight Against Any
                                         Violence With Experience
                                     </h2>
                                 </div>
-                                <div className="content px-4">
+                                <div className="content px-md-4">
                                     <p>
                                         There are many variations of passages of
                                         Lorem Ipsum available, but the majority

@@ -18,8 +18,8 @@ const Services = () => {
 
     return (
         <div className="service-area">
-            <div className="container-md container-fluid">
-                <div className="section-info mb-5">
+            <div className="container-md p-0 p-md-2">
+                <div className="section-info mb-5 mx-2">
                     <div className="row">
                         <div className="col-md-6">
                             <div className="section-title">
@@ -31,7 +31,7 @@ const Services = () => {
                         </div>
                         <div className="col-md-1"></div>
                         <div className="col-md-5">
-                            <div>
+                            <div className="section-info-text">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit, sed do eiusmod tempor
@@ -59,7 +59,11 @@ const Services = () => {
                         <div className="col-md-8">
                             <div className="service-content position-relative">
                                 <div className="service-data-img">
-                                    <img src={service.img} alt="" />
+                                    <img
+                                        className="img-fluid"
+                                        src={service.img}
+                                        alt=""
+                                    />
                                     <div className="service-data">
                                         <h3 className="text-light">
                                             {service.name}
@@ -67,7 +71,7 @@ const Services = () => {
                                         <h4 className="text-light">
                                             {service.price}$
                                         </h4>
-                                        <p className="mb-4 text-light">
+                                        <p className="mb-2 mb-md-4 text-light">
                                             Domestic Violence in London How a
                                             Lawyer Can Help I must explain to
                                             you how all this mistaken idea of

@@ -83,3 +83,31 @@
 .service-data a:hover {
     color: #e3b576;
 }
+
+@media screen and (max-width: 768px) {
+    .service-area {
+        padding: 70px 0;
+    }
+    .section-title {
+        border: none;
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .section-info-text p {
+        text-align: center;
+    }
+    .service-data {
+        margin: 16px;
+        padding: 16px;
+    }
+    .service-data p {
+        font-size: 15px;
+        line-height: 1.4em;
+    }
+    .service-data a {
+        padding: 8px 14px;
+    }
+}

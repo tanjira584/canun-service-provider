@@ -25,3 +25,20 @@
 .slide-btn button:hover {
     background-color: #dca354;
 }
+@media screen and (max-width: 768px) {
+    .slide-title h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .slide-text h4 {
+        text-align: center;
+    }
+    .slide-btn {
+        text-align: center;
+    }
+    .slide-bannar {
+        height: inherit;
+        margin-top: 0px;
+        padding: 70px 0;
+    }
+}
