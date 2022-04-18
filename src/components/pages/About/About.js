@@ -22,8 +22,7 @@ const About = () => {
                         <div className="about-me-content px-4">
                             <div className="title mb-5">
                                 <h2 className="">
-                                    We Are Here To Fight Against Any Violence
-                                    With Experience
+                                    The Proffession I Like Most
                                 </h2>
                             </div>
                             <div className="content">
