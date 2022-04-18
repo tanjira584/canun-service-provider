@@ -1,17 +1,3 @@
-.post-body .post-info span {
-    margin-right: 24px;
-    text-transform: uppercase;
-    color: #636893;
-}
-.post-body .post-info span:hover {
-    color: #dca354;
-}
-.post-body .post-info span:not(:last-of-type)::after {
-    position: relative;
-    content: "";
-    display: inline-block;
-    right: -12px;
-    top: 0;
-    border: 4px solid #dca354;
-    border-radius: 50%;
+.blogs-area span {
+    font-weight: bold;
 }

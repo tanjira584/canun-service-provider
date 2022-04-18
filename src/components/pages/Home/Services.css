@@ -11,6 +11,11 @@
 .section-title h2 span {
     color: #e3b576;
 }
+.section-info-text p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #666666;
+}
 .service-title-bar .service-title {
     height: 122px;
     background: transparent;

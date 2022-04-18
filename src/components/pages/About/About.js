@@ -28,15 +28,17 @@ const About = () => {
                             </div>
                             <div className="content">
                                 <p>
-                                    There are many variations of passages of
-                                    Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by
-                                    injected humour, or randaomised words which
-                                    don't look even slightly believable and
-                                    going through the cites of the word in
-                                    classical literature, discovered the
-                                    undoubtable source. Lorem Ipsum comes from
-                                    sections.
+                                    My Aim in life to become a Full Stack Web
+                                    Developer and want to become the skilled
+                                    employee as a Web Developer . I can't even
+                                    think of living without my aim in life which
+                                    is to become a software engineer. Every
+                                    single morning when I wake up, The desire in
+                                    my heart becomes. So intense, that it gives
+                                    me a thrill toward the achievement of my
+                                    dream. Life is a race and if you don't run
+                                    fast you will lose. That is why I'm working
+                                    hark to become a Full Stack Web Developer.
                                 </p>
                                 <div className="signature">
                                     <h4>Tanjir Ahmed</h4>

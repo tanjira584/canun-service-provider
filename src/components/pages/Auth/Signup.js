@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../share/Footer/Footer";
 import Header from "../../share/Header/Header";
 import "./Signup.css";
@@ -14,6 +14,7 @@ const Signup = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     /*------Use React-firebase hooks-----*/
     const [createUserWithEmailAndPassword, user, loading] =
@@ -26,22 +27,19 @@ const Signup = () => {
     /*-----Handle Input from------*/
     const handleEmail = (e) => {
         setEmail(e.target.value);
-        e.target.value = "";
     };
     const handleName = (e) => {
         setName(e.target.value);
-        e.target.value = "";
     };
     const handlePassword = (e) => {
         setPassword(e.target.value);
-        e.target.value = "";
     };
 
     if (loading || updating || gloading) {
         return <p>Loading.....</p>;
     }
     if (user || guser) {
-        console.log("user", user);
+        navigate("/");
     }
 
     /*------Handle Signup form Submit-----*/

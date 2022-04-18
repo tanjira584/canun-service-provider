@@ -56,7 +56,6 @@ const Login = () => {
     /*-----Send Password Reset Email-----*/
     const handleForgotPassword = () => {
         sendPasswordResetEmail(email);
-        console.log("Sent an email");
         toast("Sent an email");
     };
     return (

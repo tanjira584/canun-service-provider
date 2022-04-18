@@ -22,7 +22,6 @@ const Services = () => {
         );
         setService(seleltedService);
     };
-    console.log(service.id);
     return (
         <div className="service-area">
             <div className="container-md p-0 p-md-2">
