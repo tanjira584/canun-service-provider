@@ -2,6 +2,7 @@
     height: 100vh;
     background-color: #29395b;
     margin-top: -92px;
+    overflow: hidden;
 }
 .slide-title h1 {
     font-size: 60px;
@@ -24,6 +25,9 @@
 }
 .slide-btn button:hover {
     background-color: #dca354;
+}
+.bannar-img {
+    margin-top: 100px;
 }
 @media screen and (max-width: 768px) {
     .slide-title h1 {

@@ -128,4 +128,8 @@
     .service-data a {
         padding: 8px 14px;
     }
+
+    .service-title-bar .service-title.active-bar::before {
+        border-width: 0px 0 0px 00px;
+    }
 }

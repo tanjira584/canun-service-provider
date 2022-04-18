@@ -1,12 +1,13 @@
 import React from "react";
 import "./Bannar.css";
+import heroman from "../../../images/hero-man.png";
 
 const Bannar = () => {
     return (
-        <div className="slide-bannar d-flex flex-column justify-content-center">
+        <div className="slide-bannar">
             <div className="container-md container-fluid">
                 <div className="row">
-                    <div className="col-md-7">
+                    <div className="col-md-7  d-flex flex-column justify-content-center">
                         <div className="slide-content">
                             <div className="slide-title">
                                 <h1>Canun Lawyer APP.</h1>
@@ -24,7 +25,11 @@ const Bannar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-5"></div>
+                    <div className="col-md-5 d-none d-md-block">
+                        <div className="bannar-img">
+                            <img className="img-fluid" src={heroman} alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
