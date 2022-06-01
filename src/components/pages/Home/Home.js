@@ -7,6 +7,7 @@ import Services from "./Services";
 import Consult from "./Consult";
 import BlogSection from "./BlogSection";
 import GetQuote from "./GetQuote";
+import ReviewsSection from "./ReviewsSection";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Header></Header>
             <Bannar></Bannar>
             <Services></Services>
+            <ReviewsSection></ReviewsSection>
             <Consult></Consult>
             <GetQuote></GetQuote>
             <BlogSection></BlogSection>
