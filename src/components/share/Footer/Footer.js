@@ -11,7 +11,6 @@ import {
 import {
     faAngleRight,
     faEnvelopeOpenText,
-    faLocation,
     faLocationDot,
     faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";

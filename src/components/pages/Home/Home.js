@@ -5,6 +5,7 @@ import Header from "../../share/Header/Header";
 import Bannar from "./Bannar";
 import Services from "./Services";
 import Consult from "./Consult";
+import BlogSection from "./BlogSection";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Bannar></Bannar>
             <Services></Services>
             <Consult></Consult>
+            <BlogSection></BlogSection>
             <Footer></Footer>
         </div>
     );
