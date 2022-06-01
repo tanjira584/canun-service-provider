@@ -8,15 +8,17 @@ import Consult from "./Consult";
 import BlogSection from "./BlogSection";
 import GetQuote from "./GetQuote";
 import ReviewsSection from "./ReviewsSection";
+import TeamSection from "./TeamSection";
 
 const Home = () => {
     return (
         <div>
             <Header></Header>
             <Bannar></Bannar>
+            <Consult></Consult>
             <Services></Services>
             <ReviewsSection></ReviewsSection>
-            <Consult></Consult>
+            <TeamSection></TeamSection>
             <GetQuote></GetQuote>
             <BlogSection></BlogSection>
             <Footer></Footer>
