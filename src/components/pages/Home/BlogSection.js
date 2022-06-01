@@ -62,7 +62,9 @@ const BlogSection = () => {
                                             />
                                         </div>
                                         <div>
-                                            <h6>Jenifer Willy</h6>
+                                            <h6 className="mb-0">
+                                                Jenifer Willy
+                                            </h6>
                                         </div>
                                     </div>
                                     <div className="date">
@@ -107,7 +109,9 @@ const BlogSection = () => {
                                             />
                                         </div>
                                         <div>
-                                            <h6>Jenifer Willy</h6>
+                                            <h6 className="mb-0">
+                                                Jenifer Willy
+                                            </h6>
                                         </div>
                                     </div>
                                     <div className="date">
@@ -152,7 +156,9 @@ const BlogSection = () => {
                                             />
                                         </div>
                                         <div>
-                                            <h6>Jenifer Willy</h6>
+                                            <h6 className="mb-0">
+                                                Jenifer Willy
+                                            </h6>
                                         </div>
                                     </div>
                                     <div className="date">

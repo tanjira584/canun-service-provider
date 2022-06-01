@@ -6,6 +6,7 @@ import Bannar from "./Bannar";
 import Services from "./Services";
 import Consult from "./Consult";
 import BlogSection from "./BlogSection";
+import GetQuote from "./GetQuote";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Bannar></Bannar>
             <Services></Services>
             <Consult></Consult>
+            <GetQuote></GetQuote>
             <BlogSection></BlogSection>
             <Footer></Footer>
         </div>
